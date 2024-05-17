@@ -2,73 +2,78 @@
 <html lang="en">
 <head>
     <link rel ="stylesheet" href = "ShopHeader.css">
-    <link rel ="stylesheet" href = "AboutUsBody.css">
+    <link rel ="stylesheet" href = "ContactUsBody.css">
     <link rel = "stylesheet" href = "HomePageFooter.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Ear Me Up | About </title>
+    <title> Ear Me Up | Contact </title>
 </head>
 <body>
-    <header class = "UpperPart">
+    <header class = "UpperPart"> 
         <div class = "Logo"> <!-- Logo Name and Image -->
-            <a href = "Index.html"><img src = "Images/SWave2.png"></a>
+            <a href = "Index.html"><img src = "Images/SWave2.png" alt = "backgroundPic"></a>
             <h1> EarMe.Up </h1> 
         </div>
         
         <div class = "Navigations">
             <div class = "Buttons">
-                <a href = "Home.html"><button> HOME</button></a>
-                <a href = "Shop.html"><button> SHOP </button></a>
-                <a href = "AboutUs.html"><button> ABOUT </button></a>
-                <a href = "ContactUs.html"><button> CONTACT </button></a>
+                <a href = "home.html"><button> HOME</button></a>
+                <a href = "shop.html"><button> SHOP </button></a>
+                <a href = "aboutUs.html"><button> ABOUT </button></a>
+                <a href = "contactUs.html"><button> CONTACT </button></a>
             </div>
             <div class = "Search">
                 <form class ="search-form" action="Shop.html">
                     <input type="text" name="q" placeholder="Search...">
-                    <button type="submit"><img class = "SearchImage" src = "Images/Search2.png"></button>
+                    <button type="submit"><img class = "SearchImage" src = "Images/Search2.png" alt = "ImageSearch"></button>
+                </form>
             </div>
-    </header>
-
-    <section class = "AboutUsBody">
-
-        <h2 class = "BodyHeader"> About Us </h2>
-
-        <div class = "Information"> <!-- Logo Name and Image -->
-            <img class = "LogoImage" src = "Images/SWave1.png">
-            <h2>EarMe.Up</h2> 
-            <p> Welcome to EarMe.Up, Your Ultimate Destination for Wireless Earbuds! At EarMe.Up, we are <br>
-                passionate about bringing the latest and greatest in wireless audio technology to the Philippines.  <br>
-                As a dedicated affiliate online shop, we curate a diverse selection of premium wireless  <br>
-                earbuds that cater to the needs and preferences of our discerning customers. 
-            </p>
         </div>
-        
-        <div class = "BodyContent">
-        <h3> Why Choose EarMe.Up? </h3>
-            <ul>
-                <li><b>Expert Curation:</b> Our team meticulously selects top-quality wireless earbuds from reputable brands, ensuring <br> 
-                    you have access to the latest advancements in audio technology. So far we're connected on some of the <br>
-                    known brands such as JBL, Sony, Razer, Beats by Dre, Apple, and Bose. 
-                </li>
-                <li>
-                    <b>Customer-Centric Approach:</b> Your satisfaction is our priority. We are committed to providing excellent<br>
-                    customer service, quick response times, and hassle-free shopping experiences. <br>
-                </li>
-                <li>
-                    <b>Affiliate Partnerships:</b> As an affiliate online shop, we collaborate with industry leaders to bring you exclusive<br>
-                     deals, promotions, and discounts on premium wireless earbuds. <br>
-                </li>
-                <li>
-                    <b>Philippine-Based:</b> based in the Philippines, EarMe.Up understands the unique needs of our local customers.<br>
-                    We strive to contribute to the tech landscape by making high-quality audio products easily accessible. <br>
-                </li>
-            </ul>
+    </header> 
+
+    <section class = "ContactUs">
+        <h1 class = "Header"> Contact Us </h1>
+        <div class = "Details">
+            <div>
+                <h3> Map </h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.689522048593!2d120.94821807388901!3d14.44504798602312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cd9231e8a84f%3A0xc54eff9fa78b81f3!2sSM%20City%20Bacoor!5e0!3m2!1sen!2sph!4v1709696587873!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                <h3> Address </h3> 
+                <p> 3rd floor SM City Bacoor Bacoor, Cavite, Philippines </p>
+
+                <h3> Email </h3>
+                <p> earmeup@gmail.com </p>
+            
+                <h3> Phone Number </h3>
+                <p> (+63) 9********* </p>
+            </div>
         </div>
 
-        <p class = "Update">
-            To stay updated on the latest trends, product launches, and exclusive promotions follow us on <br>
-            <b>Facebook, Tiktok, and Instagram @EarMe.Up. </b>
-        </p>
+        <div class="MsgBox">
+            <div class = "Container">
+                <h1>Connect With Us!</h1>
+                <form action="submit" method="post">
+                    <div class="input-group">
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <div class = "Button">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -96,8 +101,9 @@
         </section>
 
         <div class = "CC">
-            <h6 class = "at"> ©2024 by AZ</h6>
+            <h6 class = "at"><center>©2024 by AZ </center></h6>
         </div>
     </footer>
+    
 </body>
 </html>
